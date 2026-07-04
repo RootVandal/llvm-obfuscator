@@ -43,6 +43,17 @@ obfuscation/anti-reverse-engineering techniques, and the engineering
 discipline of proving a transform preserves program semantics (see the
 end-to-end tests in `tests/`) rather than just "looking obfuscated".
 
+## Disclaimer
+
+This project is built and published for educational and portfolio
+purposes: to demonstrate LLVM IR internals and classic code-obfuscation /
+anti-reverse-engineering techniques. The same techniques (string
+encryption, control-flow flattening, opaque predicates, ...) are dual-use
+— they show up in both legitimate software protection and in malware
+trying to evade antivirus/analysis. Don't use this on code you don't have
+the right to modify, and don't use it to hide malicious functionality. The
+author takes no responsibility for misuse.
+
 ## Scope & limitations
 
 This is not a general-purpose LLVM IR parser — it supports the regular,

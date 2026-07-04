@@ -1,0 +1,14 @@
+[project]
+name = "llvm-ir-obfuscator"
+version = "0.1.0"
+description = "A source-to-source obfuscator operating on LLVM IR: string encryption, instruction substitution, bogus control flow, and control-flow flattening."
+requires-python = ">=3.9"
+dependencies = [
+    "llvmlite>=0.42",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

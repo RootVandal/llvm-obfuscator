@@ -1,0 +1,2 @@
+llvmlite>=0.42
+pytest>=7.0
